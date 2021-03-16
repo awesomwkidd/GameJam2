@@ -25,8 +25,6 @@ mouse.KeyDown:Connect(function(key)
               val:FireServer()
            end
         end
-      
-      
     end
 end
 
