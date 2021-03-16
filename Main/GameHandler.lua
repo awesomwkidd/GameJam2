@@ -1,3 +1,7 @@
+local npcList = {
+    
+}
+
 game:GetService("Players").PlayerAdded:Connect(function(player)
     player.CharacterAdded:Connect(function(chr)
         
@@ -11,6 +15,14 @@ game:GetService("Players").PlayerAdded:Connect(function(player)
         wantedValue.Name = "Wanted"
         wantedValue.Value = false
         wantedValue.Parent = dataValues
+        
+        wantedValue.Changed:Connect(function()
+            if wantedValue == true then
+               
+            elseif wantedValue == false then
+               
+            end
+        end)
  
     end)
 end)
