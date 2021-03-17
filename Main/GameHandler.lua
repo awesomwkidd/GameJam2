@@ -2,6 +2,10 @@ local npcList = {
     
 }
 
+local function alertNearby(NPCAlert, player, chr)
+    --// add magnitude n stuff here to alert npcs
+end
+
 game:GetService("Players").PlayerAdded:Connect(function(player)
     player.CharacterAdded:Connect(function(chr)
         
