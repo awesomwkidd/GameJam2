@@ -16,6 +16,7 @@ local pathfindingService = game:GetService("PathfindingService")
 local moveTo = true
 
 --// List of NPCs
+-- Future note, don't make this a table!
 local John = NPCLocation:WaitForChild("John")
 local Principal = NPCLocation:WaitForChild("Principal")
 
@@ -52,9 +53,9 @@ end
 
 --//Main
 if moveTo == true then
-	NPCMove(John, John:WaitForChild("Humanoid"), Boxes.JohnBox1.Position)
+    NPCMove(John, John:WaitForChild("Humanoid"), Boxes.JohnBox1.Position)
 else
-	return moveTo
+    return moveTo
 end
 
 
