@@ -3,6 +3,10 @@ local npcList = {
 }
 
 local function alertNearby(NPCAlert, player, chr)
+    local alertIgnore = {
+        [1] = "Principal",
+    }
+    
     --// add magnitude n stuff here to alert npcs
 end
 
